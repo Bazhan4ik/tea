@@ -1,20 +1,29 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="app">
+    <div class="all-wrap">
+        <div class="card">
+            <div class="title">
+                <h1>Tea Ceremonies</h1>
+                <h2>in Niagara on the Lake</h2>
+            </div>
+            <div class="info">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero voluptatem nobis ratione repellendus
+                    distinctio commodi exercitationem earum. Eligendi minus, quisquam natus ipsa deleniti qui dolore est
+                    eveniet voluptas eaque libero.</p>
+            </div>
+            <div class="contact">
+                <p>+289 968 7940</p>
+            </div>
+        </div>
+        <div class="video">
+            <vg-player (onPlayerReady)="onPlayerReady($event)">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+                <vg-overlay-play></vg-overlay-play>
+                <vg-buffering></vg-buffering>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+                <video [vgMedia]="$any(media)" #media autoplay muted>
+                    <source src="./../../assets/vid/tea_vid.mp4" type="video/mp4">
+                </video>
+            </vg-player>
+        </div>
+    </div>
+</div>
