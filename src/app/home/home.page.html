@@ -1,29 +1,56 @@
 <div class="app">
     <div class="all-wrap">
-        <div class="card">
-            <div class="title">
-                <h1>Tea Ceremonies</h1>
-                <h2>in Niagara on the Lake</h2>
+        <div class="another-wrap">
+            <div class="card">
+                <div class="title">
+                    <h1>Tea Ceremonies</h1>
+                </div>
+                <div class="info">
+                    <p>
+                        Welcome to the enchanting world of tea ceremonies in Niagara-on-the-Lake, where time-honored
+                        traditions and serene surroundings converge to create an unforgettable experience. Immerse
+                        yourself
+                        in the art of tea as our skilled and gracious hosts guide you through a journey of refined
+                        elegance
+                        and deep-rooted culture. Each ceremony is a harmonious blend of meticulous preparation, graceful
+                        gestures, and the finest teas sourced from around the globe. Whether you seek a moment of
+                        tranquil
+                        solitude or wish to share this profound ritual with loved ones, our tea ceremonies promise to
+                        soothe
+                        your soul and leave you with cherished memories. Discover the serenity and warmth of our tea
+                        ceremonies, and allow us to share the magic of this ancient tradition with you. Book your
+                        cherished
+                        spot now and savor a truly exceptional tea experience in the heart of Niagara-on-the-Lake.
+                    </p>
+                </div>
+                <div class="contact">
+                    <p class="phone">
+                        +1 (289) 968-7941 Valentyna
+                    </p>
+                    <p class="instagram">
+                        <img src="./../../assets/icon/instagram.png" alt="instagram"> @teaonthelake
+                    </p>
+                    <p class="address">
+                        Niagara on the Lake, Somestreet 12.
+                    </p>
+                </div>
             </div>
-            <div class="info">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero voluptatem nobis ratione repellendus
-                    distinctio commodi exercitationem earum. Eligendi minus, quisquam natus ipsa deleniti qui dolore est
-                    eveniet voluptas eaque libero.</p>
-            </div>
-            <div class="contact">
-                <p>+289 968 7940</p>
-            </div>
-        </div>
-        <div class="video">
-            <vg-player (onPlayerReady)="onPlayerReady($event)">
+            <div class="video">
+                <vg-player (onPlayerReady)="onPlayerReady($event)">
 
-                <vg-overlay-play></vg-overlay-play>
-                <vg-buffering></vg-buffering>
+                    <vg-overlay-play></vg-overlay-play>
+                    <vg-buffering></vg-buffering>
 
-                <video [vgMedia]="$any(media)" #media autoplay muted>
-                    <source src="./../../assets/vid/tea_vid.mp4" type="video/mp4">
-                </video>
-            </vg-player>
+                    <video [vgMedia]="$any(media)" #media autoplay muted>
+                        <!-- <source src="https://antiadtape.com/v/4oMkBjem64IyRk/tea_vid.mp4" type="video/mp4"> -->
+                        <source src="https://drive.google.com/uc?export=preview&id=1t6XGxvAz33rZUHunikdsuolhZudmEmqU"
+                            type="video/mp4">
+                    </video>
+                </vg-player>
+                <!-- <iframe width="640" height="360" frameborder="0"
+                    src="https://mega.nz/embed/RmNVibYD#6yp0331SMRCdzNJE2GTTBOWYEqPUxYLk5iTNEe5iMlo"
+                    allowfullscreen></iframe> -->
+            </div>
         </div>
     </div>
 </div>
