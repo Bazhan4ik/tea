@@ -53,39 +53,7 @@
     }
 
 
-    #japanese-characters {
-        position: relative;
-        margin-top: 50px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        min-height: 300px;
 
-        .vines {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            position: relative;
-            align-items: center;
-
-            img {
-                width: 32px;
-                height: 32px;
-            }
-
-            div.reverse {
-                rotate: 180deg;
-                padding-top: 27px;
-            }
-        }
-
-        h2 {
-            font-family: 'Montserrat', sans-serif;
-            color: black;
-        }
-    }
 
 
     .vines {
@@ -246,6 +214,41 @@
 
 
 
+
+@media screen and (max-width: 820px) {
+    .app {
+        #text-video {
+            width: 100vw;
+            margin: 0 24px;
+            max-width: 384px;
+
+            flex-direction: column;
+        }
+
+        #info {
+            .card {
+                max-width: 448px;
+                width: 100vw;
+                margin: 0 24px;
+            }
+        }
+
+        .video {
+            width: 200px;
+            height: calc(200px / 2160px * 3840px);
+
+            vg-player {
+                width: 200px;
+                height: calc(200px / 2160px * 3840px);
+            }
+
+            video {
+                width: 200px;
+                aspect-ratio: 2160 / 3840;
+            }
+        }
+    }
+}
 
 
 
