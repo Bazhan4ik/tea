@@ -1,132 +1,462 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Lumanosimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Lumanosimo&family=Montserrat:wght@600&family=Playfair+Display:wght@500&display=swap');
 
 
 
 
 .app {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    overflow-y: auto;
-    background-color: #c1eccb;
+    background-color: rgb(192, 216, 195);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+
     display: flex;
-    justify-content: center;
-    padding-top: 124px;
+    align-items: center;
+    flex-direction: column;
 
-    .all-wrap {
-        margin: 0 8px;
-        max-width: 850px;
-        width: 100vw;
-        min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
 
-        .another-wrap {
-            display: grid;
-            grid-template-columns: 1fr 300px;
-            gap: 24px;
-            height: 100%;
-        }
-    }
 
-    .card {
-        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-        background-color: #67c580;
-        padding: 24px;
-        border-top-left-radius: 24px;
-        border-top-right-radius: 24px;
+    header {
+        width: 100%;
+        padding-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        p {
-            color: black;
-            font-family: 'Edu SA Beginner', cursive;
+        .wrap {
+            width: 712px;
         }
 
-        .instagram {
+        .flowers {
+            width: 100%;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            gap: 8px;
+
 
             img {
-                width: 18px;
-                height: 18px;
+                width: 72px;
+                height: 72px;
             }
         }
 
         .title {
+            margin-top: 34px;
+
             h1 {
                 color: black;
                 font-family: 'Lumanosimo', cursive;
-            }
-
-            h2 {
-                color: black;
-                margin: 0;
-                font-size: 18px;
-                font-family: 'Edu SA Beginner', cursive;
+                font-size: 30px;
             }
         }
     }
 
-    .video {
-        aspect-ratio: 2160 / 3840;
-        width: 324px;
-        padding: 12px;
+
+    #japanese-characters {
+        position: relative;
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 300px;
+
+        .vines {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            align-items: center;
+
+            img {
+                width: 32px;
+                height: 32px;
+            }
+
+            div.reverse {
+                rotate: 180deg;
+                padding-top: 27px;
+            }
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+        }
+    }
+
+
+    .vines {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 52px;
+        margin-bottom: 42px;
+
+        img {
+            width: 26px;
+            height: 26px;
+        }
+
+        div.reverse {
+            rotate: 180deg;
+            padding-top: 18px;
+        }
+    }
+
+
+    #text-video {
+        width: 760px;
+        display: flex;
+        gap: 12px;
+        padding: 24px;
+
         border-radius: 24px;
-        height: calc(300px / 2160px * 3840px);
+
+        background: rgb(164, 193, 141);
+        background: linear-gradient(135deg, rgba(164, 193, 141, 1) 0%, rgba(91, 149, 87, 1) 100%);
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 
 
-        vg-player {
-            width: 300px;
-            border-radius: 26px;
-            height: calc(300px / 2160px * 3840px);
-            outline: 8px solid #67c580;
-            // aspect-ratio: 2160 / 3840;
+
+
+        p {
+            color: black;
+            font-family: 'Edu SA Beginner', cursive;
+            font-size: 22px;
+        }
+    }
+
+
+    #info {
+        .wrap {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
         }
 
-        video {
-            border-radius: 24px;
-            width: 300px;
-            outline: 8px solid #54c272;
-            aspect-ratio: 2160 / 3840;
+        .card {
+            box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+            width: 448px;
+            height: 324px;
+            border-radius: 12px;
+            background-color: white;
+            color: black;
+            background-color: #86af78;
+            display: grid;
+            grid-template-columns: 65% 35%;
+
+            .text {
+                padding: 12px;
+
+                h3 {
+                    font-family: 'Playfair Display', serif;
+                }
+
+                ul {
+                    padding-left: 32px;
+                    font-family: 'Edu SA Beginner', cursive;
+                    font-size: 20px;
+
+                    li {
+                        margin-top: 12px;
+                    }
+                }
+
+                p {
+                    font-size: 20px;
+                    font-family: 'Edu SA Beginner', cursive;
+                }
+            }
+
+            .image {
+                height: 100%;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                    border-top-right-radius: 12px;
+                    border-bottom-right-radius: 12px;
+                }
+            }
+
+            .yoga {
+                img {
+                    filter: brightness(70%);
+                }
+            }
         }
+    }
+
+    #qna {
+        margin: 0 24px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        max-width: 412px;
+        width: 100vw;
+        gap: 12px;
+
+        .questions {
+            button {
+                height: 42px;
+                border-radius: 4px;
+                background-color: rgb(164, 193, 141);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black;
+                font-family: 'Edu SA Beginner', cursive;
+                width: 100%;
+                margin-top: 8px;
+                font-size: 18px;
+            }
+        }
+
+        .text {
+            background: rgb(164, 193, 141);
+            background: linear-gradient(135deg, rgba(164, 193, 141, 1) 0%, rgba(91, 149, 87, 1) 100%);
+            box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+
+            font-family: 'Edu SA Beginner', cursive;
+            color: black;
+            font-size: 18px;
+            padding: 0 12px;
+            border-radius: 12px;
+        }
+    }
+
+    #contact {
+        font-family: 'Edu SA Beginner', cursive;
+        color: black;
+        font-size: 22px;
+        margin: 0 24px;
+        max-width: 412px;
+        width: 100vw;
+        background-color: #86af78;
+        padding: 24px;
+        border-radius: 24px;
     }
 }
 
 
-@media screen and (max-width: 700px) {
-    .app {
-        .all-wrap {
-            background-color: #67c580;
-            border-top-left-radius: 24px;
-            border-top-right-radius: 24px;
-            padding-bottom: 100px;
 
-            .another-wrap {
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-                position: relative;
-            }
 
-            .card {
-                background-color: none;
-                box-shadow: none;
-            }
 
-            .video {
-                width: 100%;
-                background-color: #67c580;
-                display: flex;
-                justify-content: center;
 
-                vg-player {
-                    width: 200px;
-                    height: calc(200px / 2160px * 3840px);
-                }
 
-                video {
-                    width: 200px;
-                    height: calc(200px / 2160px * 3840px);
-                }
+
+
+.video {
+    aspect-ratio: 2160 / 3840;
+    width: 280px;
+    border-radius: 24px;
+    height: calc(280px / 2160px * 3840px);
+
+
+    vg-player {
+        width: 280px;
+        border-radius: 26px;
+        height: calc(280px / 2160px * 3840px);
+        // aspect-ratio: 2160 / 3840;
+    }
+
+    video {
+        border-radius: 24px;
+        width: 280px;
+        aspect-ratio: 2160 / 3840;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+$shootingStarContainerCount: 3;
+$starCount: 10;
+
+.shootingStarContainer {
+    @for $j from 1 through $shootingStarContainerCount {
+        &:nth-child(#{$j}) {
+            position: absolute;
+            width: 100%;
+            height: 130%;
+            transform: rotate(random(10)+35deg);
+            z-index: 10;
+            //    background-color: #30000080;
+        }
+    }
+}
+
+.shootingStar {
+    position: absolute;
+    height: 1px;
+    background: linear-gradient(-70deg, rgba(255, 235, 235, 1), rgba(0, 0, 0, 1));
+
+    @for $j from 1 through $shootingStarContainerCount {
+        @for $i from 1 through $starCount {
+            .shootingStarContainer:nth-child(#{$j}) &:nth-child(#{$i}) {
+                $delay: random(60000)+200ms;
+                $duration: random(2000)+750ms;
+                left: calc(#{random(50) + 0%});
+                top: calc(#{random(98) + 1%});
+                animation: shootingFrames $duration ease-in-out $delay;
+                opacity: calc(random(75) / 100 + 0.15);
+
             }
         }
+    }
+}
+
+@keyframes shootingFrames {
+    0% {
+        transform: translateX(0);
+        width: 0;
+    }
+
+    30% {
+        width: 200px;
+    }
+
+    100% {
+        width: 0;
+        transform: translateX(random(100) + 800px);
+    }
+}
+
+
+
+
+
+
+
+.stars,
+.twinkleMask,
+.twinkleMask2,
+.clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.stars {
+    background: #000 url('https://wolf.drjm.co.uk/nightsky/stars.jpg') repeat top center;
+    z-index: 0;
+}
+
+.twinkleMask {
+    background: transparent url('https://wolf.drjm.co.uk/nightsky/twinklemask.png') repeat top center;
+    z-index: 1;
+    animation: twinkleFrames 700s linear infinite;
+}
+
+.twinkleMask2 {
+    background: transparent url('https://wolf.drjm.co.uk/nightsky/twinkleMask2.png') repeat top center;
+    z-index: 2;
+    height: 200%;
+    animation: twinkleFrames2 300s linear infinite;
+}
+
+.clouds {
+    background: transparent url('https://wolf.drjm.co.uk/nightsky/clouds.png') repeat top center;
+    z-index: 3;
+    height: 150%;
+    animation: cloudsFrames 300s linear infinite;
+}
+
+.fogContainer {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 7;
+}
+
+.fog {
+    position: absolute;
+    left: -50%;
+    top: -30%;
+    width: 200%;
+    height: 200%;
+    animation-name: fogFrames;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background: linear-gradient(-5deg, #{"#00000000 0%, #ffffff15 40%, #74590121 45%, #8b845b21 55%, #00000000 70%"});
+}
+
+
+
+@keyframes fogFrames {
+    0% {
+        transform: none;
+    }
+
+    10% {
+        transform: scaleY(.75) translate(5%, -2%) rotate(15deg);
+    }
+
+    25% {
+        transform: scaleY(1) translate(10%, 7%);
+    }
+
+    50% {
+        transform: scaleY(0.5) rotate(-15deg);
+    }
+
+    75% {
+        transform: scaleY(0.2) translate(7%, -2%);
+    }
+
+    100% {
+        transform: none;
+    }
+
+}
+
+@keyframes twinkleFrames {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@keyframes twinkleFrames2 {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 10000px 5000px;
+    }
+}
+
+@keyframes cloudsFrames {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 10000px 0;
     }
 }

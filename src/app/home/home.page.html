@@ -1,56 +1,328 @@
 <div class="app">
-    <div class="all-wrap">
-        <div class="another-wrap">
-            <div class="card">
-                <div class="title">
-                    <h1>Tea Ceremonies</h1>
-                </div>
-                <div class="info">
-                    <p>
-                        Welcome to the enchanting world of tea ceremonies in Niagara-on-the-Lake, where time-honored
-                        traditions and serene surroundings converge to create an unforgettable experience. Immerse
-                        yourself
-                        in the art of tea as our skilled and gracious hosts guide you through a journey of refined
-                        elegance
-                        and deep-rooted culture. Each ceremony is a harmonious blend of meticulous preparation, graceful
-                        gestures, and the finest teas sourced from around the globe. Whether you seek a moment of
-                        tranquil
-                        solitude or wish to share this profound ritual with loved ones, our tea ceremonies promise to
-                        soothe
-                        your soul and leave you with cherished memories. Discover the serenity and warmth of our tea
-                        ceremonies, and allow us to share the magic of this ancient tradition with you. Book your
-                        cherished
-                        spot now and savor a truly exceptional tea experience in the heart of Niagara-on-the-Lake.
-                    </p>
-                </div>
-                <div class="contact">
-                    <p class="phone">
-                        +1 (289) 968-7941 Valentyna
-                    </p>
-                    <p class="instagram">
-                        <img src="./../../assets/icon/instagram.png" alt="instagram"> @teaonthelake
-                    </p>
-                    <p class="address">
-                        Niagara on the Lake, Somestreet 12.
-                    </p>
-                </div>
+
+
+
+    <header>
+        <div class="wrap">
+            <div class="flowers">
+                <img src="./../../assets/icons/flower_orange.png" alt="orange">
+                <img src="./../../assets/icons/flower_pink.png" alt="pink">
+                <img src="./../../assets/icons/flower_white.png" alt="white">
+                <img src="./../../assets/icons/flower_red.png" alt="red">
+                <img src="./../../assets/icons/flower_purple.png" alt="purple">
             </div>
-            <div class="video">
-                <vg-player (onPlayerReady)="onPlayerReady($event)">
 
-                    <vg-overlay-play></vg-overlay-play>
-                    <vg-buffering></vg-buffering>
-
-                    <video [vgMedia]="$any(media)" #media autoplay muted>
-                        <!-- <source src="https://antiadtape.com/v/4oMkBjem64IyRk/tea_vid.mp4" type="video/mp4"> -->
-                        <source src="https://drive.google.com/uc?export=preview&id=1t6XGxvAz33rZUHunikdsuolhZudmEmqU"
-                            type="video/mp4">
-                    </video>
-                </vg-player>
-                <!-- <iframe width="640" height="360" frameborder="0"
-                    src="https://mega.nz/embed/RmNVibYD#6yp0331SMRCdzNJE2GTTBOWYEqPUxYLk5iTNEe5iMlo"
-                    allowfullscreen></iframe> -->
+            <div class="title">
+                <h1>
+                    Tea Ceremonies in Niagara on the Lake
+                </h1>
             </div>
         </div>
+    </header>
+
+
+    <!-- <section id="japanese-characters">
+        <div class="shootingStarContainer">
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+        </div>
+        <div class="shootingStarContainer">
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+        </div>
+        <div class="shootingStarContainer">
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+            <div class="shootingStar"></div>
+        </div>
+
+
+        <div class="stars"></div>
+        <div class="twinkleMask"></div>
+
+        <div class="vines">
+            <div class="reverse">
+                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+            </div>
+            <img src="./../../assets/icons/vines.png" alt="vine">
+            <img src="./../../assets/icons/vines.png" alt="vine">
+            <div class="reverse">
+                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+            </div>
+            <img src="./../../assets/icons/vines.png" alt="vine">
+            <img src="./../../assets/icons/vines.png" alt="vine">
+            <div class="reverse">
+                <img src="./../../assets/icons/vines.png" alt="vine">
+            </div>
+            <img src="./../../assets/icons/vines.png" alt="vine">
+            <div class="reverse">
+                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+            </div>
+            <img src="./../../assets/icons/vines.png" alt="vine">
+            <img src="./../../assets/icons/vines.png" alt="vine">
+        </div>
+
+        <h2>
+            Harmony 和 , Respect 敬 , Purity 清 , and Tranquility 寂
+        </h2>
+
+        <div class="vines">
+            <img src="./../../assets/icons/vines.png" alt="vine">
+            <div class="reverse">
+
+                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+            </div>
+            <img src="./../../assets/icons/vines.png" alt="vine">
+            <img src="./../../assets/icons/vines.png" alt="vine">
+            <div class="reverse">
+                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+            </div>
+            <img src="./../../assets/icons/vines.png" alt="vine">
+            <img src="./../../assets/icons/vines.png" alt="vine">
+            <div class="reverse">
+                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+            </div>
+            <img src="./../../assets/icons/vines.png" alt="vine">
+            <img src="./../../assets/icons/vines.png" alt="vine">
+        </div>
+    </section> -->
+
+    <div class="vines">
+        <div class="reverse">
+            <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+        </div>
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <div class="reverse">
+            <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+        </div>
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <div class="reverse">
+            <img src="./../../assets/icons/vines.png" alt="vine">
+        </div>
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <div class="reverse">
+            <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+            <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+        </div>
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <img src="./../../assets/icons/vines.png" alt="vine">
     </div>
+
+    <section id="text-video">
+        <div class="text">
+            <p>
+                Sometimes the rhythm of our lives is too much. Slow down. Breath in. Take a sip of tea. Relax.
+            </p>
+            <p>
+                Enhance your experiences with the practice of mindfulness.
+            </p>
+            <p>
+                Enjoy with friends or spend time with yourself.
+            </p>
+            <p>
+                Harmony 和 , Respect 敬 , Purity 清 , and Tranquility 寂
+            </p>
+        </div>
+
+        <div class="video">
+            <vg-player (onPlayerReady)="onPlayerReady($event)">
+
+                <vg-overlay-play></vg-overlay-play>
+                <vg-buffering></vg-buffering>
+
+                <video [vgMedia]="$any(media)" #media autoplay muted>
+                    <source src="https://antiadtape.com/v/4oMkBjem64IyRk/tea_vid.mp4" type="video/mp4">
+                    <source src="https://drive.google.com/uc?export=preview&id=1t6XGxvAz33rZUHunikdsuolhZudmEmqU"
+                        type="video/mp4">
+                </video>
+            </vg-player>
+        </div>
+    </section>
+
+    <div class="vines">
+        <div class="reverse">
+            <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+        </div>
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <div class="reverse">
+            <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+        </div>
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <div class="reverse">
+            <img src="./../../assets/icons/vines.png" alt="vine">
+        </div>
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <div class="reverse">
+            <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+            <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+        </div>
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <img src="./../../assets/icons/vines.png" alt="vine">
+    </div>
+
+    <section id="info">
+        <div class="wrap">
+
+            <div class="tea card">
+                <div class="text">
+                    <div class="title">
+                        <h3>Try best tea</h3>
+                    </div>
+                    <ul>
+                        <li>Sencha</li>
+                        <li>Green Pu-erh (11 years old)</li>
+                        <li>Tieguanyin</li>
+                        <li>Matcha</li>
+                        <li>
+                            <abbr title="Ukrainian Carpathian Tea, an organic tea consisting of
+                            herbs and berries gathered in forests, highlands, and lowlands of Ukrainian Carpathian
+                            mountains -- all proceeds go to the Foundation Come Back Alive">Tea For The Victory</abbr>
+                        </li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="./../../assets/images/tea1.jpg">
+                </div>
+            </div>
+
+            <div class="place card">
+                <div class="text">
+                    <div class="title">
+                        <h3>
+                            Place matters
+                        </h3>
+                    </div>
+                    <p>
+                        Drinking tea is better in a cozy, relaxing place.
+                    </p>
+                    <ul>
+                        <li>Lakeshore</li>
+                        <li>Paradise Grove</li>
+                        <li>Your house</li>
+                        <li>Yoga studio</li>
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="./../../assets/images/place1.jpg">
+                </div>
+            </div>
+            <div class="yoga card">
+                <div class="text">
+                    <div class="title">
+                        <h3>
+                            Some excercise?
+                        </h3>
+                    </div>
+                    <p>
+                        Stretch, strenghten your body before having your tea.
+                    </p>
+                    <p>
+                        Have a yoga session of your choice
+                    </p>
+                </div>
+                <div class="image yoga">
+                    <img src="./../../assets/images/yoga.jpg">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="vines">
+        <div class="reverse">
+            <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+        </div>
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <div class="reverse">
+            <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+        </div>
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <div class="reverse">
+            <img src="./../../assets/icons/vines.png" alt="vine">
+        </div>
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <div class="reverse">
+            <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+            <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+        </div>
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <img src="./../../assets/icons/vines.png" alt="vine">
+    </div>
+
+    <section id="qna">
+        <div class="questions">
+            <button (click)="setQuestion(1)">How will it go?</button>
+            <button (click)="setQuestion(2)">For whom?</button>
+            <button (click)="setQuestion(3)">Where and when?</button>
+            <button (click)="setQuestion(4)">How much?</button>
+            <button (click)="setQuestion(5)">How to book a ceremony?</button>
+        </div>
+        <div class="text">
+            <p>
+                {{ questionText }}
+            </p>
+        </div>
+    </section>
+
+    <div class="vines">
+        <div class="reverse">
+            <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+        </div>
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <div class="reverse">
+            <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+        </div>
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <div class="reverse">
+            <img src="./../../assets/icons/vines.png" alt="vine">
+        </div>
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <div class="reverse">
+            <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+            <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
+        </div>
+        <img src="./../../assets/icons/vines.png" alt="vine">
+        <img src="./../../assets/icons/vines.png" alt="vine">
+    </div>
+
+    <section id="contact">
+        <div class="box">
+            <p class="phone">Valentyna, +1 (289) 968-8603</p>
+            <p class="instagram">@shtirts</p>
+        </div>
+    </section>
 </div>
