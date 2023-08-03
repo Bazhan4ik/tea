@@ -33,6 +33,15 @@ export class HomePage {
         }
     }
 
+    @HostListener('window:scroll', ['$event'])
+    onWindowScroll(event: any) {
+
+
+        this.VGapi.play();
+
+
+    }
+
 
 
 
