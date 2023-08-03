@@ -37,8 +37,6 @@ export class HomePage {
 
 
     onPlayerReady(api: VgApiService) {
-        console.log("PLAYER READY");
-
         this.VGapi = api;
 
         api.getDefaultMedia().play();
@@ -58,6 +56,10 @@ export class HomePage {
             api.play();
 
         });
+
+        api.getDefaultMedia().subscriptions.loadedData.subscribe(() => {
+            api.play();
+        })
 
         setTimeout(() => {
             if (api.canPlay) {
@@ -83,5 +85,10 @@ export class HomePage {
             this.questionText = "To book a ceremony, call Valentyna. The phone number is below.";
         }
     }
+
+
+
+    // 493182124145154
+    // -3hlb4GU8eOG9uw--EhePSrMKJc
 
 }

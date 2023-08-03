@@ -1,6 +1,23 @@
 <div class="app">
 
 
+    <section id="intro">
+        <vg-player (onPlayerReady)="onPlayerReady($event)">
+
+            <vg-overlay-play></vg-overlay-play>
+            <vg-buffering></vg-buffering>
+
+            <video [vgMedia]="$any(media)" #media autoplay muted>
+                <source src="https://res.cloudinary.com/drkvembrf/video/upload/v1691089421/small-tea_vid_hdizg1.mp4"
+                    type="video/mp4">
+                <source>
+            </video>
+        </vg-player>
+        <h2>
+            Harmony 和 <br> Respect 敬 <br> Purity 清 <br> Tranquility 寂
+        </h2>
+        <ion-icon name="arrow-down-outline"></ion-icon>
+    </section>
 
     <header>
         <div class="wrap">
@@ -20,100 +37,7 @@
         </div>
     </header>
 
-
-    <!-- <section id="japanese-characters">
-        <div class="shootingStarContainer">
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-        </div>
-        <div class="shootingStarContainer">
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-        </div>
-        <div class="shootingStarContainer">
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-            <div class="shootingStar"></div>
-        </div>
-
-
-        <div class="stars"></div>
-        <div class="twinkleMask"></div>
-
-        <div class="vines">
-            <div class="reverse">
-                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
-            </div>
-            <img src="./../../assets/icons/vines.png" alt="vine">
-            <img src="./../../assets/icons/vines.png" alt="vine">
-            <div class="reverse">
-                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
-            </div>
-            <img src="./../../assets/icons/vines.png" alt="vine">
-            <img src="./../../assets/icons/vines.png" alt="vine">
-            <div class="reverse">
-                <img src="./../../assets/icons/vines.png" alt="vine">
-            </div>
-            <img src="./../../assets/icons/vines.png" alt="vine">
-            <div class="reverse">
-                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
-                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
-            </div>
-            <img src="./../../assets/icons/vines.png" alt="vine">
-            <img src="./../../assets/icons/vines.png" alt="vine">
-        </div>
-
-        <h2>
-            Harmony 和 , Respect 敬 , Purity 清 , and Tranquility 寂
-        </h2>
-
-        <div class="vines">
-            <img src="./../../assets/icons/vines.png" alt="vine">
-            <div class="reverse">
-
-                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
-                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
-                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
-            </div>
-            <img src="./../../assets/icons/vines.png" alt="vine">
-            <img src="./../../assets/icons/vines.png" alt="vine">
-            <div class="reverse">
-                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
-            </div>
-            <img src="./../../assets/icons/vines.png" alt="vine">
-            <img src="./../../assets/icons/vines.png" alt="vine">
-            <div class="reverse">
-                <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
-            </div>
-            <img src="./../../assets/icons/vines.png" alt="vine">
-            <img src="./../../assets/icons/vines.png" alt="vine">
-        </div>
-    </section> -->
-
-    <div class="vines">
+    <div class="vines remove">
         <div class="reverse">
             <img src="./../../assets/icons/vines.png" class="reverse" alt="vine">
         </div>
@@ -159,9 +83,9 @@
                 <vg-buffering></vg-buffering>
 
                 <video [vgMedia]="$any(media)" #media autoplay muted>
-                    <source src="https://antiadtape.com/v/4oMkBjem64IyRk/tea_vid.mp4" type="video/mp4">
-                    <source src="https://drive.google.com/uc?export=preview&id=1t6XGxvAz33rZUHunikdsuolhZudmEmqU"
+                    <source src="https://res.cloudinary.com/drkvembrf/video/upload/v1691089421/small-tea_vid_hdizg1.mp4"
                         type="video/mp4">
+                    <source>
                 </video>
             </vg-player>
         </div>
