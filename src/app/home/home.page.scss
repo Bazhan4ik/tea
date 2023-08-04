@@ -13,7 +13,7 @@
     align-items: center;
     flex-direction: column;
 
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
 
 
@@ -260,29 +260,40 @@
 
 @media screen and (max-width: 600px) {
     .app {
+        overflow-y: scroll;
 
         #text-video,
         .remove {
             display: none;
         }
 
+
         #intro {
             display: inline-block;
-            height: 100vh;
+            height: 99vh;
             width: 100%;
             position: relative;
 
-            vg-player {
+            .cover {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            // vg-player {
+            //     height: 100%;
+            //     width: 100%;
+
+            video {
+                object-fit: cover;
                 height: 100vh;
                 width: 100%;
-
-                video {
-                    object-fit: cover;
-                    max-height: 100%;
-                    width: 100%;
-                    filter: saturate(50%) brightness(50%);
-                }
+                filter: saturate(50%) brightness(50%);
             }
+
+            // }
 
             h2 {
                 position: absolute;

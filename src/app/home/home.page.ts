@@ -14,68 +14,8 @@ export class HomePage {
     questionText: string = "Questions?";
 
 
-
-
-
-    @HostListener('document:click', ['$event'])
-    playOnClick(event: MouseEvent) {
-
-        if (this.VGapi && this.VGapi.canPlay) {
-            this.VGapi.play();
-        }
-    }
-
-    @HostListener("document:load", ["$event"])
-    playOnScroll(event: MouseEvent) {
-
-        if (this.VGapi && this.VGapi.canPlay) {
-            this.VGapi.play();
-        }
-    }
-
-    @HostListener('window:scroll', ['$event'])
-    onWindowScroll(event: any) {
-
-
-        this.VGapi.play();
-
-
-    }
-
-
-
-
     onPlayerReady(api: VgApiService) {
         this.VGapi = api;
-
-        api.getDefaultMedia().play();
-
-
-        const subs = api.getDefaultMedia().subscriptions.canPlay.subscribe(() => {
-
-            console.log("CAN PLAY", api.canPlay);
-            if (api.canPlay) {
-                api.play();
-                subs.unsubscribe();
-            }
-        });
-
-        api.getDefaultMedia().subscriptions.pause.subscribe(() => {
-
-            api.play();
-
-        });
-
-        api.getDefaultMedia().subscriptions.loadedData.subscribe(() => {
-            api.play();
-        })
-
-        setTimeout(() => {
-            if (api.canPlay) {
-                api.play();
-            }
-        }, 1000);
-
     }
     setQuestion(q: number) {
         if (q == 1) {

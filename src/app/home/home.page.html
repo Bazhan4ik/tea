@@ -2,21 +2,23 @@
 
 
     <section id="intro">
-        <vg-player (onPlayerReady)="onPlayerReady($event)">
+        <!-- <vg-player (onPlayerReady)="onPlayerReady($event)">
 
             <vg-overlay-play></vg-overlay-play>
-            <vg-buffering></vg-buffering>
+            <vg-buffering></vg-buffering> -->
 
-            <video autoplay muted loop oncanplay="this.play()" onloadedmetadata="this.muted = true" playsinline>
-                <source src="https://res.cloudinary.com/drkvembrf/video/upload/v1691089421/small-tea_vid_hdizg1.mp4"
-                    type="video/mp4">
-                <source>
-            </video>
-        </vg-player>
-        <h2>
-            Harmony 和 <br> Respect 敬 <br> Purity 清 <br> Tranquility 寂
-        </h2>
-        <ion-icon name="arrow-down-outline"></ion-icon>
+        <video autoplay muted loop oncanplay="this.play()" onloadedmetadata="this.muted = true" playsinline>
+            <source src="https://res.cloudinary.com/drkvembrf/video/upload/v1691089421/small-tea_vid_hdizg1.mp4"
+                type="video/mp4">
+            <source>
+        </video>
+        <!-- </vg-player> -->
+        <div class="cover">
+            <h2>
+                Harmony 和 <br> Respect 敬 <br> Purity 清 <br> Tranquility 寂
+            </h2>
+            <ion-icon name="arrow-down-outline"></ion-icon>
+        </div>
     </section>
 
     <header>
