@@ -7,7 +7,7 @@
             <vg-overlay-play></vg-overlay-play>
             <vg-buffering></vg-buffering>
 
-            <video [vgMedia]="$any(media)" #media autoplay muted>
+            <video autoplay muted loop oncanplay="this.play()" onloadedmetadata="this.muted = true" playsinline>
                 <source src="https://res.cloudinary.com/drkvembrf/video/upload/v1691089421/small-tea_vid_hdizg1.mp4"
                     type="video/mp4">
                 <source>
@@ -77,17 +77,11 @@
         </div>
 
         <div class="video">
-            <vg-player (onPlayerReady)="onPlayerReady($event)">
-
-                <vg-overlay-play></vg-overlay-play>
-                <vg-buffering></vg-buffering>
-
-                <video [vgMedia]="$any(media)" #media autoplay muted>
-                    <source src="https://res.cloudinary.com/drkvembrf/video/upload/v1691089421/small-tea_vid_hdizg1.mp4"
-                        type="video/mp4">
-                    <source>
-                </video>
-            </vg-player>
+            <video autoplay muted loop oncanplay="this.play()" onloadedmetadata="this.muted = true" playsinline>
+                <source src="https://res.cloudinary.com/drkvembrf/video/upload/v1691089421/small-tea_vid_hdizg1.mp4"
+                    type="video/mp4">
+                <source>
+            </video>
         </div>
     </section>
 
